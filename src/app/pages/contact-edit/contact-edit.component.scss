@@ -1,0 +1,43 @@
+
+.container {
+    font-family: carme;
+    form {
+        label {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+        input {
+            padding:10px 0;
+            border:none;
+            color:#000000;
+            border-bottom:1px solid #000000;
+            outline:none;
+            font-family: carme;
+            background: transparent;
+    
+            &:focus {
+               border-bottom: 3px solid #6441a5;
+            }
+    
+        }
+
+        .edit-btn {
+            margin-top: 1rem;
+                  
+        font-size: 2rem;
+        padding: 0.5rem 1rem;
+        background: #6441a5;
+        color: white;
+        margin-top: 0.5rem;
+        transition: .3s ease;
+        &:hover {
+            transform: scale(1.1);
+        }
+    
+        }
+    }
+}
+.app-logo {
+    width: 300px;
+    height: 300px;
+}

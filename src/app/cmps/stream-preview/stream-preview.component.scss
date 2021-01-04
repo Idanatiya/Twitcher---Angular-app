@@ -1,0 +1,41 @@
+.stream-preview {
+    position: relative;
+    font-family: carme,sans-serif;
+    box-shadow: -3px 3px 18px rgba(190, 185, 185, 0.45);
+    border-radius: 5px;
+    .live-badge {
+    color: white;
+    background: red;
+    border-radius: 10px;
+    font-family: 'bungee';
+    font-size: 10px;
+    padding: 0px 0.5rem;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    }
+
+    .stream-info {
+        padding: 0.5rem;
+    }
+    
+    
+    .viewers-count {
+        font-weight: bold;
+    }
+
+    .started-at {
+        font-size: 10px;
+        margin-bottom: 0.5rem;
+    }
+
+    .stream-game {
+     color: #6441a5;
+     font-weight: bold;
+     font-family: carme;
+     margin-bottom: 0.5rem;
+     margin: 0;
+     margin-block-end: 4px;
+     margin-block-start: 4px;
+    }
+}

@@ -1,0 +1,8 @@
+
+<a [routerLink]="['/twitch-app/contacts', contact._id]">
+    <section class="contact-preview flex space-between align-center">
+        <span class="twitch-tag"><i class="fab fa-twitch"></i></span>
+        <img src="https://robohash.org/{{contact._id}}?set=set5" alt="">
+        <span>{{contact.name}}</span>
+    </section>
+</a>

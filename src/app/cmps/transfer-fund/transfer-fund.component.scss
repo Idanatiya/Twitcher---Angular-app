@@ -1,0 +1,10 @@
+.tranfer-form{
+    padding: 3rem;
+
+    .content {
+        & >* {
+            padding: 0.4rem;
+        }
+    }
+
+}

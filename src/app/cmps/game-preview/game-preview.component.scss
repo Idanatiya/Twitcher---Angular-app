@@ -1,0 +1,28 @@
+
+a {
+    color: black;
+}
+.game-preview {
+    cursor: pointer;
+    box-shadow: 0 0 18px rgba(190,185,185,.45);
+    border-radius: 5px;
+    background-color: #fff;
+
+    .game-tag {
+        padding: 7px;
+        span {
+            font-family: carme,sans-serif;
+            font-weight: bold;
+        }
+
+        
+
+        .fa-twitch {
+            color: #6441a5;
+        }
+    }
+    img {
+        object-fit: cover;
+        width: 100%;
+    }
+}

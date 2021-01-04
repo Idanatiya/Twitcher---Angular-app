@@ -1,0 +1,42 @@
+<!-- {{form.value|json}} -->
+
+<div class="container flex column align-center">
+    <img src="assets/imgs/app-logo.png" class="app-logo" />
+    <form class="edit-container flex column justify-center align-center" (ngSubmit)="saveContact()">
+        <label for="">Username</label>
+        <input type="text" placeholder="Enter Name.." [(ngModel)]="contact.name" name="name">
+        <label for="">Email</label>
+        <input type="text" placeholder="Enter Email.." [(ngModel)]="contact.email" name="email">
+        <label for="">Phone</label>
+        <input type="text" placeholder="Enter Phone..." [(ngModel)]="contact.phone" name="phone">
+        <label for="">Role</label>
+        <select [(ngModel)]="contact.role" name="role">
+            <option value="" disabled>Select a role</option>
+            <option value="user">User</option>
+            <option value="streamer">Streamer</option>
+            <!-- <option *ngFor="let role of roles" [ngValue]="role">{{role | titlecase}}</option> -->
+        </select>
+        <button class="btn edit-btn">{{btnTxt}}</button>
+    </form>
+</div>
+
+<!-- <div class="container flex column align-center">
+    <img src="assets/imgs/app-logo.png"  class="app-logo"/>
+    <form #form="ngForm"  class="edit-container flex column justify-center align-center" (ngSubmit)="saveContact(form.value)">
+        <div  ngModelGroup="contact">
+            <label for="">name</label>
+            <input type="text" placeholder="Enter Name.."  [(ngModel)]="contact.name" name="name">
+            <label for="">email</label>
+            <input type="text" placeholder="Enter Email.."  [(ngModel)]="contact.email" name="email">
+            <label for="">phone</label>
+            <input type="text" placeholder="Enter Phone..."  [(ngModel)]="contact.phone"  name="phone" >
+            <label for="">role</label>
+            <select [(ngModel)]="contact.role" name="role">
+                <option value="" disabled>Select a role</option>
+                <option *ngFor="let role of roles" value="{{role}}">{{role | titlecase}}</option>
+            </select>
+            <button>{{btnTxt}}</button>
+        </div>
+        
+    </form>
+</div> -->

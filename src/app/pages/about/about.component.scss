@@ -1,0 +1,20 @@
+
+.about-page {
+    font-family: bungee,sans-serif;
+    background: #f7f7f7;
+    height: 100vh;
+    img {
+        width: 400px;
+        height: 400px;
+    }
+    h1 {
+        font-weight: bold;
+        text-align: center;
+       
+    }
+}
+
+@media(max-width:350px) { 
+    h1 {
+    }
+}

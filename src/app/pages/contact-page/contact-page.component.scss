@@ -1,0 +1,44 @@
+h1 {
+    font-size: 2rem;
+    padding: 2rem;
+    font-family: "carme";
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+
+    .error-container {
+    background: white;
+    border-radius: 7px;
+/* box-shadow: 0 0 4px; */
+        width: 650px;
+    margin: 0 auto;
+        
+        img {
+            width: 80px;
+        }
+        span {
+            font-family: carme;
+            font-size: 1.5rem;
+            color: #6441a5;
+            font-weight: bold;
+
+        }
+    }
+}
+
+.add-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    
+   
+    i {
+        font-size: 3rem;
+        color: #6441a5;
+    }
+}
+
+

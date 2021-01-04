@@ -1,0 +1,12 @@
+
+<a [routerLink]="['/twitch-app/game', game.id]">
+    <section class="game-preview">
+        <div class="game-tag flex space-between">
+            <i class="fab fa-twitch"></i>
+            <span>{{gameTitle}}</span>
+           
+        </div>
+        <img src="{{game.box_art_url}}" alt="">
+        
+    </section>
+</a>

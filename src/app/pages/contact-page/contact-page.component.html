@@ -1,0 +1,12 @@
+
+    <h1><i class="fab fa-twitch"></i> Twitch Users</h1>
+    <div class="container" *ngIf="!isLoading">
+        <contact-filter (emitFilter)="doFilter($event)"></contact-filter>
+        <contact-list [contacts]="contacts$ | async"></contact-list>
+        <div class="error-container flex space-evenly align-center" *ngIf="contacts.length === 0">
+            <img src="assets/imgs/cat-icon.png" /><span>There are no users matching this search...</span>
+        </div>
+        <a class="add-btn" routerLink="/twitch-app/contact/edit"><i class="fas fa-user-astronaut"></i></a>
+    </div>
+    <loader *ngIf="isLoading"></loader>
+

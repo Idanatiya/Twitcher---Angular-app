@@ -1,0 +1,110 @@
+
+
+
+.app-header {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh; */
+    height: 100%;
+    min-width: 4.5rem;
+    max-width: 4.5rem;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #292f4c;
+    color: white;
+    font-family: carme;
+    .nav-icon {
+        font-size: 1.5rem;
+    }
+    
+
+    i {
+        cursor: pointer;
+    }
+
+    a {
+        color: white;
+    }
+
+    .top-nav {
+        img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+        span {
+            font-size: 1rem;
+            font-weight: bold;
+            color: #f1f1f1;
+
+        }
+
+        .app-brand {
+            margin-bottom: 1.2rem;
+        }
+
+        .nav-links {
+            & >* {
+                padding: 5px;
+                margin-bottom: 0.5rem;
+            }
+        }
+        
+        // i {
+        //     font-size: ;
+        // }
+    }
+
+    .greet-user {
+        position: absolute;
+        z-index: 10;
+        transform: rotate(-90deg);
+        background-color: #6441a5;
+        color: #fefefe;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 0 0 1.25rem 1.25rem;
+        width: 10rem;
+        text-align: center;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        /* cursor: default; */
+        left: -67px;
+        top: 50%;
+        height: 25px;
+        font-family: 'carme';
+        letter-spacing: 1px;
+    }
+
+    .bottom-nav {
+        margin-bottom: 2rem;
+        & >* {
+            padding: 5px;
+        }
+        .fa-sign-out-alt {
+            transform: rotate(180deg);
+        }
+        span.nav-icon {
+            padding: 12px;
+        }
+
+        
+    }
+}
+
+.nav-link-container {
+    // padding-right: 9px;
+    width: 100%;
+    text-align: center;
+    transition: .3s ease;
+    &:hover {
+        display: block;
+        background-color: rgba(0,0,0,.6);
+    //    width: 100%;
+       border-radius: 0 8px 8px 0;
+    }
+}

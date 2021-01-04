@@ -1,0 +1,4 @@
+<section class="avatar" [ngStyle]="setMyStyles()">
+    <span *ngIf="username">{{avatarName}}</span>
+    <img  *ngIf="avatarUrl" src="{{avatarUrl}}" alt="">
+</section>

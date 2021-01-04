@@ -1,0 +1,15 @@
+.move-item {
+    border-bottom: 1px solid #d3d3d3;
+   
+}
+
+.move-info {
+    & >* {
+        margin-bottom: 0.5rem;
+    }
+    font-weight: bold;
+
+    .twitch-drink {
+        width: 25px;
+    }
+} 

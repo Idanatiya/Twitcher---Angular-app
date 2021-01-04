@@ -1,0 +1,10 @@
+<section class="stream-list-page">
+    <div class="intro flex space-between align-center">
+        <h1><i class="fab fa-twitch"></i> Live Streams</h1>
+        <a routerLink="/twitch-app"><i class="fas fa-reply"></i></a>
+    </div>
+    <div class="stream-list" *ngIf="streams">
+        <stream-preview *ngFor="let stream of streams"  [stream]="stream"></stream-preview>
+    </div>
+    <loader *ngIf="!streams"></loader>
+</section>

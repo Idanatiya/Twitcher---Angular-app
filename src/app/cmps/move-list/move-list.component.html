@@ -1,0 +1,4 @@
+<section class="move-list" *ngIf="moves.length >0;">
+    <move-item *ngFor="let move of moves; trackBy:trackMove" [move]="move"></move-item>
+</section>
+<p class="no-transactions" *ngIf="!moves.length">There are not any transactions yet...</p>

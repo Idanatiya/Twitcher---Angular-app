@@ -1,0 +1,61 @@
+
+.title {
+   
+    font-size: 2rem;
+    padding: 2rem;
+    font-family: 'carme';
+    border-bottom: 1px solid #d3d3d3;
+
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: carme;
+  padding: 2rem;
+}
+
+.move-history-title {
+  padding: 1rem;
+  font-family: 'carme';
+  border-top: 1px solid #d3d3d3;
+}
+
+.move-history {
+  padding: 1rem;
+}
+  .controls  {
+    & >* {
+      font-size: 1.5rem;
+      cursor: pointer;
+      margin-bottom: 1.5rem;
+    }
+
+    .fa-trash-alt {
+      color: crimson;
+    }
+  }
+
+  .user-info  {
+    span:first-child {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #5b5d5b;
+    }
+    span {
+      padding: 0.5rem;
+    }
+  }
+
+  .fa-twitch {
+    color: #6441a5;
+    font-size: 1.3rem;
+  }
+  .fa-user-circle {
+    font-size: 1.3rem;
+  }
+
+
+img {
+    width: 220px;
+}

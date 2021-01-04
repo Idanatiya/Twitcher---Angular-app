@@ -1,0 +1,6 @@
+<app-header [user]="user" (logout)="doLogout($event)"></app-header>
+<div class="twitch-app-container" *ngIf="user">
+    <!-- <game-list></game-list> -->
+    <router-outlet></router-outlet>
+</div>
+<loader *ngIf="!user"></loader>

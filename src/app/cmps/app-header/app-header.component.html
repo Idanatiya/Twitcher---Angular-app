@@ -1,0 +1,24 @@
+<!-- {{user | json}} -->
+
+<section class="app-header" *ngIf="user">
+    <div class="top-nav flex column align-center justify-end">
+        <div class="app-brand flex column  align-center justify-end">
+            <a routerLink="/twitch-app">
+                <img src="assets/imgs/app-logo.png" class="app-logo" alt="logo-preview">
+            </a>
+            <span>Twitcher</span>
+        </div>
+        <div class="nav-links flex column align-center">
+            <div class="nav-link-container"><a class="nav-icon" routerLink="/twitch-app/contacts"><i class="far fa-address-book"></i></a></div>
+            <div class="nav-link-container"><a class="nav-icon" routerLink="/twitch-app/about"><i class="fas fa-info"></i></a></div>
+        </div>
+    </div>
+    <div class="greet-user">
+        <span>Hello {{user.username}}</span>
+    </div>
+    <div class="bottom-nav flex column align-center">
+        <div class="nav-link-container"><span (click)="goProfile(user._id)" class="nav-icon"><i class="far fa-user-circle"></i></span></div>
+        <div class="nav-link-container"><span (click)="doLogout()" class="nav-icon"><i class="fas fa-sign-out-alt"></i></span></div>
+        <avatar username={{user.username}} size="40" bcg="rgb(0, 133, 255)"></avatar>
+    </div>
+</section>

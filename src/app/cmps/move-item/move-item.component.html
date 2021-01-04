@@ -1,0 +1,8 @@
+<section class="move-item flex align-center space-between">
+    <div class="move-info flex column">
+        <h2>To: {{move.contact.name}}</h2>
+        <span>At: {{move.at | date:'short'}}</span>
+        <span className="coin">Amount: <img src="assets/imgs/energy-drink.png" class="twitch-drink">{{move.coinsAmount}} Twitch Drinks</span>
+    </div>
+    <avatar username={{move.user.from}} size="40"></avatar>
+</section>

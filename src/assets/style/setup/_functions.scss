@@ -1,0 +1,18 @@
+@function set-button-text-color($color) {  
+    @if (lightness( $color ) > 40) {
+      @return black;
+    }
+    @else {
+      @return white;
+    }
+}
+
+@function rem($size) {
+  $remSize: $size / 16px;
+  @return ($remSize) * 1rem;
+}
+
+// EM Functions
+@function em($pixels, $context: 16px) {
+  @return ($pixels/$context) * 1em;
+}

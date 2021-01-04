@@ -1,0 +1,26 @@
+
+<h1 class="title">{{contact.name | titlecase}} Details</h1>
+<section class="container" *ngIf="contact">
+    <div class="controls flex space-between">
+        <span (click)="goBack()"><i class="fas fa-reply"></i></span>
+        <span (click)="nextUser(contact._id)">Next User</span>
+        <span (click)="goEdit(contact._id)"><i class="far fa-edit"></i></span>
+        <span (click)="deleteContact(contact._id)"><i class="fas fa-trash-alt"></i></span>
+    </div>
+    <div class="flex space-between align-center space-evenly">
+        <img src="https://robohash.org/{{contact._id}}?set=set5" alt="">
+        <div class="user-info flex column">
+            <span>{{contact.name}}</span>
+            <span>{{contact.email}}</span>
+            <span>{{contact.phone}}</span>
+            <span><i [class]="role"></i> {{contact.role | titlecase}} </span>
+        </div>
+    </div>
+    <transfer-fund (emitTransferFunds)="transferFunds($event)" [maxCoins]="loggedUser.coins"></transfer-fund>
+    <h1 class="move-history-title">Move History</h1>
+    <div class="move-history">
+        <move-list [moves]="filterMoves"></move-list>
+    </div>
+</section>
+<loader *ngIf="!contact"></loader>
+

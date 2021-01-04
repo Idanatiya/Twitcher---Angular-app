@@ -1,0 +1,28 @@
+.user-profile {
+    font-family: carme;
+        h1 {
+            font-size: 2rem;
+            padding: 2rem;
+            font-family: 'carme';
+            border-bottom: 1px solid #d3d3d3;
+        }
+
+        .user-info {
+            font-weight: bold;
+            .username {
+                font-size: 2rem;
+                letter-spacing: 2px;
+            }
+            & >* {
+                padding: 1rem;
+            }
+        }
+
+       .move-item {
+           padding: 4rem;
+       }
+
+
+        
+     
+}

@@ -1,0 +1,26 @@
+.contact-preview {
+    background: #6441a5;
+    color: white;
+    padding: 0 0.5rem;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    font-family: carme,sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform .3s ease;
+
+    &:hover {
+        transform: translateY(-3px);
+    }
+
+    img {
+        object-fit: cover;
+        width: 100px;
+    }
+
+    .twitch-tag {
+        position: absolute;
+        left: 5px;
+        top: 5px;
+    }
+}

@@ -1,0 +1,19 @@
+<section class="stream-preview">
+    <a href={{visitStream}}>
+        <img src="{{stream.thumbnail_url}}" alt=""/>
+    </a>
+    <span class="live-badge">{{stream.type}}</span>
+    <div class="stream-info">
+        <div class="flex column">
+            <span class="started-at">Started at: {{streamStarted}}</span>
+            <span>{{streamTitle}}</span>
+            <span class="stream-game">{{stream.game_name}}</span>
+        </div>
+        <div class="flex space-between">
+            <span>{{stream.user_name}}</span>
+            <span class="viewers-count">{{stream.viewer_count}} viewers</span>
+        </div>
+    </div>
+</section>
+
+<!-- <iframe class="videoplayer" src="{{iframeLink}}" height="300" width="400" frameborder="0" scrolling="no"></iframe> -->

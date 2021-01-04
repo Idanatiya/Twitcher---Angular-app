@@ -1,0 +1,131 @@
+.big-btn {
+    background-color: #2e4eade7;
+    font-size: 2rem;
+    padding: 0 1rem;
+    border-radius: 2px;
+    color: rgb(211, 220, 228);
+    transition: .33s;
+    &:hover {
+        background-color: #2e4ead;
+    }
+}
+
+.align-btn {
+    padding: 1rem;
+    font-size: 1.5rem;
+    transition: 0.53s;
+    &:hover {
+        background-color: #ccc;
+        border-radius: 12px;
+    }
+}
+
+.misc-control {
+    position: relative;
+}
+
+.iframe-btn {
+    background-color: #124a76;
+    color: #f0f0f0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 20px;
+    opacity: 0;
+    padding: 0.5rem;
+    transition: all 0.3s;
+    z-index: 2001;
+}
+
+.video-container:hover .iframe-btn {
+    opacity: 1;
+}
+
+.map-container:hover .iframe-btn {
+    opacity: 1;
+}
+
+.choice-btn {
+    background: #124a76;
+    width: 100%;
+    color: white;
+    font-size: 1.2rem;
+    font-family: carme, sans-serif;
+    padding: 0.5rem;
+    transition: all 0.33s;
+    border-top: 1px solid #ccc;
+    &:hover {
+        background-color: #124b76e1;
+    }
+    &:first-child {
+        border-right: 1px solid rgba(204, 204, 204, 0.5);
+        background: transparent;
+        color: black
+    }
+}
+
+.collab-btn {
+    width: 100%;
+    color: black;
+    font-size: 1.2rem;
+    font-family: carme, sans-serif;
+    padding: 0.5rem;
+    transition: all 0.33s;
+    border-top: 1px solid #ccc;
+    background: #b6b6b660;
+    font-family: 'carme';
+}
+
+.video-btn,
+.map-search-btn {
+    padding: 10px;
+    background: #124a76;
+    color: white;
+    outline: 0;
+    border: 0;
+    font-size: 14px;
+    transition: .33s;
+    &:hover {
+        background: #124a76d1;
+        color: rgba(255, 255, 255, 0.8);
+    }
+}
+
+.alert-btn {
+    padding: 0.5rem 1rem;
+    background-color: crimson;
+    color: white;
+    font-family: carme;
+    font-size: 1.2rem;
+}
+
+.start-btn {
+    padding: 0.5rem 1rem;
+    background-color: #1DB954;
+    color: white;
+    font-family: carme;
+    font-size: 1.2rem;
+}
+
+.profile-btn {
+    color: #222;
+}
+
+// .branch-btn {
+//     align-self: flex-end;
+//     position: absolute;
+//     top: 0;
+//     margin: 0.75rem 0 0.75rem 0.75rem;
+//     transition: 0.33s;
+//     .btn {
+//         &:hover {
+//             background-color: #ccc;
+//         }
+//         &:after {
+//             font-family: "Font Awesome 5 Free";
+//             font-weight: 900;
+//             content: "\f303";
+//             font-size: 1rem;
+//         }
+//     }
+// }

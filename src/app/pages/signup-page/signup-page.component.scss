@@ -1,0 +1,87 @@
+
+
+ .home {
+     position: absolute;
+     left: 100px;
+     top: 100px;
+     .fa-reply {
+         font-size: 2.5rem;
+         font-weight: bold;
+ 
+     }
+     
+ }
+.container {
+    
+    min-height: 100vh;
+    background: #f7f7f7;
+    font-family: carme;
+    position: relative;
+    font-family: carme;
+
+
+    .app-logo {
+        width: 500px;
+    }
+
+    .form-control {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+
+        label {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        input {
+            padding:10px 0;
+            border:none;
+            color:#000000;
+            border-bottom:1px solid #000000;
+            outline:none;
+            font-family: carme;
+            background: transparent;
+    
+            &:focus {
+               border-bottom: 3px solid #6441a5;
+            }
+    
+        }
+
+    }
+
+    .action-btn{    
+        font-size: 2rem;
+        padding: 0.5rem 1rem;
+        background: #6441a5;
+        color: white;
+        margin-top: 0.5rem;
+        transition: .3s ease;
+        margin-bottom: 1rem;
+        &:hover {
+            transform: scale(1.1);
+    }
+    
+}
+   
+}
+
+@media(max-width: 350px) {
+    .home {
+        left: 25px;
+        top: 25px;
+    }
+
+    .container {
+        .app-logo {
+            width: 240px;
+        }
+
+        .form-control {
+            padding: 1.2rem;
+        }
+    }
+
+}

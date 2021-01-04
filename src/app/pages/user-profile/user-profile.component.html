@@ -1,0 +1,12 @@
+
+<section class="user-profile" *ngIf="user">
+    <h1>{{user.username | titlecase}} Profile</h1>
+    <div class="user-info flex column align-center">
+        <img src="https://robohash.org/{{user._id}}png" alt="">
+        <h3 class="username">Username: {{user.username | titlecase}}</h3>
+        <span>Email: {{user.email}}</span>
+        <span>Created at: {{user.createdAt | date:'short' }}</span>
+        <span>Amount: <img src="assets/imgs/energy-drink.png" class="twitch-drink">{{user.coins}} Twitch Drinks</span>
+    </div>
+    <move-list class="profile-moves" [moves]="user.moves"></move-list>
+</section>
